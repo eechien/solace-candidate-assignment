@@ -8,7 +8,7 @@ import AdvocateContextProvider from './store/advocates-context.jsx';
 export default function Home() {
   return (
     <AdvocateContextProvider>
-      <main>
+      <main className="container space-y-2 space-x-6">
         <Header />
         <SearchForm />
         <Advocates />
