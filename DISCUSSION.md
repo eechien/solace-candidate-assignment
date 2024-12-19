@@ -4,7 +4,9 @@ If I had more time I would address the following
 * Add pre-commit
 
 # Styling
-* I would add a modal to show any errors encountered with searching the API for advocates.
+* I would add some indication that results are loading while waiting for the results of fetching advocate data.
+* I would add a modal to tell user if there was an error encountered with searching the API for advocates rather
+  than console.logging.
 * I would try to figure out Solace colors to use for the Table and Form.
 * The Search Form would be on the right side of the page.
 * The table page would be responsive and scrollable at smaller widths. 
@@ -21,3 +23,4 @@ If I had more time I would address the following
   to search text in Postgres.
 * If I kept just the `searchTerm` field, rather than filtering over specific fields, 
   I'd update the `route.ts` to search for the searchTerm within the `jsonb` field `specialities`.
+
