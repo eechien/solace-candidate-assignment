@@ -11,7 +11,6 @@ export default function Advocates() {
     async function getAdvocates() {
       try {
         updateAdvocates(await fetchAdvocates());
-        console.log("Updated advocates on first load")
       } catch (error) {
         console.log("Issue getting advocates") // FIXME
       }

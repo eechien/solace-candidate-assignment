@@ -11,7 +11,6 @@ export async function GET(
   if (request.nextUrl.searchParams.get('searchTerm')) {
     searchTerm = request.nextUrl.searchParams.get('searchTerm')
     searchTerm = `%${searchTerm}%`
-    console.log(searchTerm)
   }
   const data = await db.select().from(advocates).where(
     searchTerm ? (
